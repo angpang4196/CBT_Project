@@ -299,12 +299,12 @@ public class MakeCBTService {
 					}
 					System.out.print("다음 문제 : Enter, 다시 풀기 : 0 >>> ");
 					String strRet = scan.nextLine();
-					if (strRet.equals("Enter")) {
-						System.out.println("다음 문제로 넘어갑니다.");
-						break;
-					} else {
+					if (strRet.equals("0")) {
 						System.out.println("< Last Chance >");
 						continue;
+					} else {
+						System.out.println("다음 문제로 넘어갑니다.");
+						break;
 					}
 				}
 			}
@@ -319,6 +319,9 @@ public class MakeCBTService {
 				for (String wCount : wList) {
 					System.out.print(wCount + ", ");
 				}
+
+				cList.clear();
+				wList.clear();
 				System.out.println();
 			}
 
