@@ -261,7 +261,7 @@ public class MakeCBTService {
 
 		for (int i = 0; i < intSize; i++) {
 			System.out.println("=========================================================");
-			System.out.println((i + 1) + "." + cbtList.get(i).getCb_question());
+			System.out.println(cbtList.get(i).getId() + "." + cbtList.get(i).getCb_question());
 			System.out.println("---------------------------------------------------------");
 
 			String[] strAnswer = { cbtList.get(i).getCb_ans1(), cbtList.get(i).getCb_ans2(),
