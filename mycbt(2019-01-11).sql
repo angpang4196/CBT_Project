@@ -1,0 +1,20 @@
+-- mycbt
+CREATE TABLE tbl_cbt(
+    id          NUMBER          PRIMARY KEY,
+    cb_question NVARCHAR2(125)  NOT NULL,
+	cb_ans1     NVARCHAR2(125)  NOT NULL,
+	cb_ans2     NVARCHAR2(125)  NOT NULL,
+	cb_ans3     NVARCHAR2(125)  NOT NULL,
+	cb_ans4     NVARCHAR2(125)  NOT NULL,
+	cb_cans     NVARCHAR2(125)  NOT NULL
+);
+
+CREATE SEQUENCE SEQ_CBT START WITH 1 INCREMENT BY 1;
+
+SELECT * FROM tbl_cbt;
+
+DROP TABLE tbl_cbt;
+
+DROP SEQUENCE SEQ_CBT;
+
+COMMIT;
